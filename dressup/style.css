@@ -115,6 +115,27 @@
   left: 16px;
 }
 
+.Dog {
+  width: 390px;
+  height: 390px;
+  top: 15px;
+  left: -10px;
+}
+
+.Monkey {
+  width: 469px;
+  height: 469px;
+  top: -19px;
+  left: -62px;
+}
+
+.Frog {
+  width: 400px;
+  height: 400px;
+  top: 0px;
+  left: -9px;
+}
+
 .base {
   width: 220px;
   height: 220px;
