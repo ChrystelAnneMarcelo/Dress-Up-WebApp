@@ -36,12 +36,11 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 button.src = '';
                 button.alt = '';
-                button.parentElement.style.visibility = "hidden"; // hide if no suit
+                button.parentElement.style.visibility = "hidden";
             }
         }
     }
 
-    // Selection click events
     for (let i = 0; i < 3; i++) {
         document.querySelector(`.select${i + 1}`).addEventListener('click', () => {
             const suit = suits[suitOffset + i];
@@ -49,7 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Left and Right navigation
     document.querySelector('.leftButton').addEventListener('click', () => {
         if (suitOffset - 3 >= 0) {
             suitOffset -= 3;
@@ -64,5 +62,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    updateSelectionButtons(); // initialize
+    updateSelectionButtons();
 });
