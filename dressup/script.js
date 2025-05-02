@@ -48,14 +48,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    document.querySelector('.leftButton').addEventListener('click', () => {
+    function animateButton(button) {
+        button.classList.add('animate-click');
+        setTimeout(() => {
+            button.classList.remove('animate-click');
+        }, 200);
+    }
+
+    document.querySelector('.leftButton').addEventListener('click', (e) => {
+        const btn = e.currentTarget;
+        animateButton(btn);
         if (suitOffset - 3 >= 0) {
             suitOffset -= 3;
             updateSelectionButtons();
         }
     });
 
-    document.querySelector('.rightButton').addEventListener('click', () => {
+    document.querySelector('.rightButton').addEventListener('click', (e) => {
+        const btn = e.currentTarget;
+        animateButton(btn);
         if (suitOffset + 3 < suits.length) {
             suitOffset += 3;
             updateSelectionButtons();
