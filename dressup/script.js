@@ -62,5 +62,5 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    updateSelectionButtons();
+    updateSelectionButtons(); //dfsfd
 });
