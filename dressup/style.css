@@ -1,109 +1,179 @@
 @import url('https://fonts.cdnfonts.com/css/pixelify-sans');
 
-:root{
-    font-family: 'Pixelify Sans', sans-serif;
-    background: url(images/bg-image.gif) no-repeat center center fixed;
-    background-size: cover;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
+:root {
+  font-family: 'Pixelify Sans', sans-serif;
+  background: url(images/bg-image.gif) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-  .DressUpContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border-radius: 17px;
-    border-style: solid;
-    border-color: white;
-    border-width: 1;
-    background: #CBD3FE;
-    background: linear-gradient(90deg, rgba(203, 211, 254, 1) 0%, rgba(192, 242, 204, 1) 100%);
-    width: 457px;
-    height: 609px;
-  }
-  
-  .MainContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-width: 1;
-    border-radius: 17px;
-    border-color: white;
-    width: 400px;
-    height: 550px;
-    -webkit-border-radius: 17px;
-    -moz-border-radius: 17px;
-    -ms-border-radius: 17px;
-    -o-border-radius: 17px;
-    background: #CBD3FE;
-    background: linear-gradient(180deg, rgba(203, 211, 254, 1) 0%, rgba(192, 242, 204, 1) 100%);
+.DressUpContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 17px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1;
+  background: #CBD3FE;
+  background: linear-gradient(180deg, rgba(203, 211, 254, 1) 0%, rgba(192, 242, 204, 1) 100%);
+  width: 457px;
+  height: 609px;
+}
+
+.MainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1;
+  border-radius: 17px;
+  border-color: white;
+  width: 400px;
+  height: 550px;
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  -ms-border-radius: 17px;
+  -o-border-radius: 17px;
+  background: #CBD3FE;
+  background: linear-gradient(180deg, rgba(203, 211, 254, 1) 0%, rgba(192, 242, 204, 1) 100%);
 }
 
 
-.Title, .Character, .Selection{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Title,
+.Character,
+.Selection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Title{
-    height: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    text-shadow: 1px 1px black;
-    margin-bottom: 20px;
+.Title {
+  height: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  text-shadow: 1px 1px black;
+  margin-bottom: 20px;
 }
 
-.Character{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-width: 1;
-    border-color: white;
-    width: 400px;
-    height: 380px;
+.Character {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 1;
+  border-color: white;
+  width: 400px;
+  height: 380px;
+  background: url(images/bg-image.gif) no-repeat;
+  background-size: cover;
+}
+
+.bg-char {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.char-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.Bear {
+  left: 35px;
+  top: 50px;
+  width: 326px;
+  height: 326px;
+}
+
+.Cat {
+  left: 9px;
+  top: 55px;
+  width: 345px;
+  height: 345px;
+}
+
+.Bunny {
+  width: 360px;
+  height: 360px;
+  top: 0px;
+  left: 16px;
+}
+
+.base {
+  width: 220px;
+  height: 220px;
+  position: absolute;
+  top: 105px;
+  left: 100px;
 }
 
 .Selection {
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-  }
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
 
-  .leftButton{
-    margin-right: 20px;
-  }
-  .rightButton{
-    margin-left: 20px;
-  }
+.leftButton {
+  margin-right: 20px;
+}
 
-  .leftButton svg{
-    height: 35px;
-    width: 30px;
-  }
+.rightButton {
+  margin-left: 20px;
+}
 
-  .rightButton svg{
-    height: 35px;
-    width: 30px;
-  }
+.leftButton svg {
+  height: 35px;
+  width: 30px;
+}
 
-  .select1, .select2, .select3 {
-    height: 74px;
-    width: 79px;
-    background-color: white;
-    border-radius: 7px;
-    
+.rightButton svg {
+  height: 35px;
+  width: 30px;
+}
+
+.select1,
+.select2,
+.select3 {
+  height: 74px;
+  width: 79px;
+  background-color: white;
+  border-radius: 7px;
+
+}
+
+.select1 img,
+.select2 img,
+.select3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.select1 img {
+  padding-top: 8px;
+}
+
+.select2 img {
+  padding-top: 10px;
 }

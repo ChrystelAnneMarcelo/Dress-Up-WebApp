@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DressUpHTML</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-
+    <script src="script.js"></script>
 </head>
+
 <body>
-    <div class = "DressUpContainer">
-        <div class = "MainContainer">
-            <div class = "Title">
+    <div class="DressUpContainer">
+        <div class="MainContainer">
+            <div class="Title">
                 <div class="text">dress me up!</div>
             </div>
-            <div class = "Character">
+            <div class="Character">
                 <div class="bg-char">
-                    <div class="CharClothes">
-                        <div class="face"></div>
-                    </div>
+                    <img src="images/face.png" alt="BaseFace" class="char-layer base">
+                    <img src="images/bear.png" alt="BearSuit" class="char-layer Bear">
+                    <!--  <img src="images/bunny.png" alt="BunnySuit" class="char-layer Bunny"> -->
+                    <!--  <img src="images/cat.png" alt="CatSuit" class="char-layer Cat">-->
+
                 </div>
             </div>
-            <div class = "Selection">
+            <div class="Selection">
                 <div class="leftButton">
                     <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13.75 1.41016L13.75 18.5898L0.900391 10L13.75 1.41016Z" fill="#C3FFE0" stroke="white"/>
+                        <path d="M13.75 1.41016L13.75 18.5898L0.900391 10L13.75 1.41016Z" fill="#C3FFE0"
+                            stroke="white" />
                     </svg>
                 </div>
-                <div class="select1"></div>
-                <div class="select2"></div>
-                <div class="select3"></div>
+                <div class="select1">
+                    <img src="images/bear.png" alt="BearSelec">
+                </div>
+                <div class="select2">
+                    <img src="images/cat.png" alt="CatSelec">
+                </div>
+                <div class="select3">
+                    <img src="images/bunny.png" alt="BunnySelec">
+                </div>
                 <div class="rightButton">
                     <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1.25 18.5898V1.41016L14.0996 10L1.25 18.5898Z" fill="#C3FFE0" stroke="white"/>
-                        </svg>                        
+                        <path d="M1.25 18.5898V1.41016L14.0996 10L1.25 18.5898Z" fill="#C3FFE0" stroke="white" />
+                    </svg>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>
